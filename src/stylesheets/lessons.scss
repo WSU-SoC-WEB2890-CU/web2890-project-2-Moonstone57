@@ -1,0 +1,27 @@
+@use '_custom' as *;
+
+#lessonsTitle{
+    background-color: $secondary;
+    color: white;
+}
+
+#lessonsCards{
+    h2{
+        font-size: $h3-font-size;
+        margin: 0;
+    }
+}
+
+#lessonSignUp{
+    background-color: $secondary;
+    color: white;
+    
+    button{
+        @include button-style;
+    }
+
+    a{
+        color: $sky;
+    }
+}
+

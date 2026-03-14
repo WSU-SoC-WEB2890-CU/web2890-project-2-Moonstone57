@@ -1,0 +1,25 @@
+@use '_custom' as *;
+
+footer{
+    background-color: $secondary;
+    color: white;
+
+    #newsletterButton{
+        @include button-style;
+        text-decoration: none;
+    }
+
+    hr{
+        border-top: 2px solid $gray-500 !important;
+        opacity: 1 !important;
+    }
+    
+
+    a{
+        color: $sky;
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+

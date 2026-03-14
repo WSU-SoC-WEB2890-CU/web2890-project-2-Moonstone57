@@ -1,0 +1,63 @@
+@use '_custom' as *;
+
+.navbar{
+    color: black;
+
+    ul{
+        gap: 15px;
+        font-weight: 600;
+
+        li{
+            font-size: $h4-font-size;
+            &:hover{
+                border: 2px solid $secondary !important;
+                border-radius: 15px;
+                background-color: $light;
+                margin: -7px;
+                padding: 5px;
+                color: black !important;
+            }
+        }
+    }
+
+    a{
+    color: black;
+    font-weight: 600;        
+
+        &.active{
+            font-weight: 700;
+            text-decoration-line: underline;
+            text-underline-offset: 5px;
+        }
+
+        img{
+            height: 30%;
+        }
+    }
+
+    @include media-breakpoint-up(lg){
+        background-color: $primary;
+    }
+}
+
+header{
+    min-height: 15vh;
+    a{
+        width: 40%;
+        i{
+            border: 2px solid transparent;
+            padding: .25rem .75rem;
+            border-radius: 100px;
+
+            &:hover{
+                border-color: $primary;
+
+            }
+        }
+        
+    }
+}
+
+#searchBar{
+    padding: 0;
+}

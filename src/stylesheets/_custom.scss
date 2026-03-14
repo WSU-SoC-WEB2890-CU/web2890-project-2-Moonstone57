@@ -1,0 +1,132 @@
+/* Color Variables */
+$primary: #00B306;
+$secondary: #032B48;
+$tertiary: #BF201C;
+$dark-green: #003D02;
+$sky: #73D0F2;
+$light: #f2f3f7;
+$dark:#000000;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "dark-green": $dark-green,
+  "light": $light,
+  "dark": $dark
+);
+
+$enable-rfs: true;
+
+/* Font Size Variables */
+$font-size-base: 1rem;
+
+$h1-font-size: 2.074rem;
+$h2-font-size: 1.728rem;
+$h3-font-size: 1.44rem;
+$h4-font-size: 1.2rem;
+
+$font-family-base: "Open Sans", sans-serif;
+$headings-font-family: "Poppins", sans-serif;
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* Font Size Break Points*/
+@include media-breakpoint-up(md){
+    body h1, body .h1{
+        font-size: 3.157rem;
+    }
+
+    body h2, body .h2{
+        font-size: 2.369rem;
+    }
+
+    body h3, body .h3{
+        font-size: 1.777rem;
+    }
+    
+    body h4, body .h4{
+        font-size: 1.333rem;
+    }
+}
+
+@include media-breakpoint-up(lg){
+    body h1, body .h1{
+        font-size: 5.063rem;
+    }
+
+    body h2, body .h2{
+        font-size: 3.375rem;
+    }
+
+    body h3, body .h3{
+        font-size: 2.25rem;
+    }
+    
+    body h4, body .h4{
+        font-size: 1.5rem;
+    }
+}
+
+/* Mixins */
+@mixin button-style{
+    border-style: hidden;
+    color: black;
+    background-color: $primary;
+    border-radius: 15px !important;
+    padding: .5rem 1rem;
+    font-weight: 600;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(black, .25);
+    &:hover{
+        background-color: $dark-green;
+        color: white;
+        border: .1rem solid $primary;
+        padding: .4rem .9rem;
+    }
+}
+
+@mixin card-style{    
+    border: 2px solid $secondary !important;
+    border-radius: 5px !important;
+
+    .divider{
+        min-width: 2px;
+        margin: 0 1rem;
+        background-color: $secondary !important;
+        align-items: stretch;
+    }
+
+    button{
+        margin-top: 15px;
+    }
+
+    .card-header{
+        background-color: $secondary;
+    }
+}
+
+.text-tertiary{
+    color: $tertiary;
+}
+
+:focus-visible{
+    border-color: $tertiary;
+    box-shadow: 0 0 0 .25rem rgba($tertiary, .25);
+}
+
+.input-group{
+    border: 2px solid $secondary;
+    border-radius: 15px;
+    
+    input:focus-within{
+        box-shadow: 0 0 0 .25rem rgba($tertiary, .25);
+    }
+}
+
+hr{
+    border-top: 2px solid $secondary !important;
+    opacity: 1 !important;
+}

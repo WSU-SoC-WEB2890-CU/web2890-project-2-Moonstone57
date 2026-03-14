@@ -1,0 +1,22 @@
+@use '_custom' as *;
+
+#tournamentTitle{
+    background-color: $secondary !important;
+    color: white;
+}
+
+#tournaments{
+    .card{
+        border-color: transparent !important;
+
+        .tournament-name{
+            font-size: $h3-font-size;
+            font-weight: 700;
+        }
+
+        .tournament-date{
+            font-size: $h3-font-size;
+            font-weight: 500;
+        }
+    }
+}

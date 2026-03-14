@@ -1,0 +1,44 @@
+@use '_custom' as *;
+
+#eventsTitle{
+    background-color: $secondary;
+    color: white;
+}
+
+#wedding{
+    .card{
+        @include card-style;
+    }
+
+    .wedding-price{
+        color: $tertiary;
+        font-weight: 700;
+    }
+}
+
+#booking{
+    background-color: $secondary;
+    color: white;
+
+    legend{
+        font-size: $font-size-base;
+        text-align: left; 
+        margin: 0;
+        padding: 0;
+    }
+
+    button{
+        @include button-style;
+        border: 4px solid $primary !important;
+    }
+
+    a{
+        color: $sky;
+    }
+    
+    input:focus-within, select:focus-within{
+        border-color: transparent;
+        box-shadow: 0 0 0 0.25rem rgba($primary, 0.5);
+    }
+}
+

@@ -1,0 +1,98 @@
+@use '_custom' as *;
+
+#associationsContainer{
+    #associationHeroContainer{
+        background-color: $secondary !important; 
+        i{
+            color: $primary;
+        }
+        #associationHeroButton{
+            @include button-style;
+            color: black;
+        }
+    }
+
+    #associationScheduleContainer{
+        background-color: $secondary !important;
+        padding: 0 2rem; 
+        a{
+            color: $primary;
+        }
+
+        #scheduleCards{
+            text-align: center;
+
+            .card{
+                border-color: $tertiary !important;
+            }
+
+            .card-header{
+                background-color: $tertiary;
+                
+            }
+
+            button{
+                @include button-style;
+                background-color: $primary;
+                color: white !important;
+            }
+        }
+    }
+
+    #associationPrices{
+        button{
+            @include button-style;
+            
+            &:hover{
+                color: white !important;
+            }
+        }
+    }
+
+    .card{
+        @include card-style;
+    }
+
+    #faq{
+        .accordion-item{
+            border-radius: 15px;
+            margin: 5px;
+            
+            .accordion-button{
+                background-color: $tertiary !important;
+                color: white;
+                padding: 1.25rem;
+                margin: 0;
+                border: 2px solid transparent;
+
+                &:hover{
+                    background-color: $secondary !important;
+                    color: white !important;
+                    margin: 0;
+                    padding: 1.25rem;
+                }
+
+                &:not(.collapsed){
+                    background-color: $tertiary;
+                    color: white !important;
+                    &:hover{
+                        background-color: $secondary !important;
+                        color: white !important;
+                    }
+                }
+
+                &:focus{
+                    border: 2px solid $tertiary;
+                    box-shadow: 0 0 0 .25rem rgba($tertiary, .25);
+
+                }
+
+                &::after{
+                    color: white;
+                    filter: none;
+                }
+            }
+        }
+    }
+}
+

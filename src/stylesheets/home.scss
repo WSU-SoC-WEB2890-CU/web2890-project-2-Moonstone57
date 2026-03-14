@@ -1,0 +1,60 @@
+@use '_custom' as *;
+
+#heroImgContainer{
+    background-color: $secondary;
+    color: white;
+}
+
+#countdownContainer{
+    background-color: $tertiary;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: transparent 5px solid;
+    color: white;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(black, .25);
+    
+    @include media-breakpoint-up(md){
+        max-width: 75%;
+    }
+
+    @include media-breakpoint-up(lg){
+        max-width: 50%;
+    }
+}
+
+#carousel{
+    min-height: 45vh;
+    background-color: $secondary;
+
+    button{
+        background-color: white !important;
+        box-shadow: none;
+        border: 2px solid transparent;
+        border-radius: 0 !important;
+        opacity: 1;
+
+        &:hover{
+            border-color: $secondary;
+        }
+    }
+}
+
+
+button{
+    @include button-style;
+}
+
+.card{
+    @include card-style;
+
+    .pass-current-price{
+        font-size: $h3-font-size;
+    }
+}
+
+footer{
+    .horseshoe-logo{
+        height: 3em;
+    }
+}

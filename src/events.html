@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events - Lucky.golf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/lucky_Golf_Horseshoe_Favicon.png">
+    <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+    
+    <header class="container-fluid d-none d-lg-flex">
+        <div class="d-flex w-100 justify-content-between align-items-center p-3 gap-2">
+            <a href="index.html" class="d-flex w-25">
+                <img class="img-fluid" src="images/logos.png" alt="logos">
+            </a>
+            <form class="d-flex flex-grow-1 mx-4" role="search">
+                <div class="input-group p-1 w-100">
+                <span class="input-group-text bg-transparent border-0 ">
+                    <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search p-0"></i></button>
+                </span>
+                <input id="searchBar" class="form-control me-2 p-0 border-0 bg-transparent" type="search" placeholder="Search..." aria-label="Search"/>
+                </div>
+            </form>
+            <a class="d-flex align-items-center justify-content-end" href="cart.html">
+                <i class="bi bi-cart3 fs-2 text-black"></i>
+            </a>  
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light p-3 w-100">
+        <div class="container-fluid justify-content-between">
+            <button class="d-flex navbar-toggler border-0 justify-content-end bg-transparent d-lg-none shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon fs-4"></span>
+            </button>
+            <a href="index.html" class="d-lg-none w-50">
+                <img class="img-fluid" src="images/logos.png" alt="logos">
+            </a>
+            <a class="d-flex align-items-center justify-content-start d-lg-none" href="cart.html">
+                <i class="bi bi-cart3 fs-3"></i>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-lg-auto d-flex">
+                    <li class="nav-item">
+                        <form class="d-flex col my-2 d-lg-none" role="search">
+                        <div class="input-group p-1 m-0">
+                            <span class="input-group-text bg-transparent border-0 ">
+                            <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search p-0"></i></button>
+                            </span>
+                            <input id="searchBar" class="form-control p-0 border-0" type="search" placeholder="Search..." aria-label="Search"/>
+                        </div>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="associations.html">Associations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gifts.html">Gifts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lessons.html">Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tournaments.html">Tournaments</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+
+    <main>
+        <section id="eventsTitle" class="py-4">
+            <div class="container">
+                <h1 class="p-1 text-center">Events</h1>
+                <p class="p-1">Are you looking for a fresh and affordable wedding venue on the west side of Weber or Davis county? We make it happen! Crane Field is perfect for your banquets, receptions, and weddings. We have an elegantly decorated interior which is much classier than a gym or rec. center! Easily host a reception or wedding ceremony in a perfect setting with green surroundings and ample parking.</p>
+            </div>
+        </section>
+
+        <section id="weddings" class="container mt-4">
+            <h2 class="text-center">Weddings</h2>
+            <p class="p-1">Visit Crane Field in person during business hours, or set up a clubhouse tour before your date is taken. We can show you around the venue and help add magic touches to your wedding day.</p>
+
+            <h3>Pricing</h3>
+            <p>All packages require a Non-Refundable Booking Fee of $100 in addition to package price and sales taxes. Also, a Clubhouse Policy Agreement must be signed to complete your reservation. Full payment is required at least 90 days in advance. All sales are final. Cancellations will be reimbursed in golf shop credits only.</p>
+
+            <div id="weddingCards" class="d-flex gap-4">
+                <div class="card mb-4 me-auto w-100">
+                    <h4 class="text-white p-4 card-header text-center">Wedding Packages<br>Pricing and Benefits</h4>
+                    <div class="card-body">
+                            <div id="weddingGoldPackage">
+                                <h5>Gold Package:</h5>
+                                <ul>
+                                    <li class="wedding-price">$1,199.00</li>
+                                    <li>Friday to Saturday Only</li>
+                                </ul>
+                            </div>
+                            <div class="divider d-none d-lg-flex"></div>
+                            <div id="weddingSilverPackage">
+                                <h5>Silver Package:</h5>
+                                <ul>
+                                    <li class="wedding-price">$1,199.00</li>
+                                    <li>Monday to Thursday Only</li>
+                                </ul>
+                            </div>
+                        <hr>
+                        <h5>All Package Benefits include:</h5>
+                        <ul>
+                            <li>2PM to 10PM Reception, Ceremony, or both</li>
+                            <li>Great Room Rental</li>
+                            <li>Kitchen Preparation Room</li>
+                            <li>Tables and Chairs</li>
+                            <li>Cake Table</li>
+                            <li>Guest Book Table</li>
+                            <li>Audiovisual Equipment and Wi-Fi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4 ms-auto w-100">
+                    <h4 class="text-white p-4 card-header text-center">Optional Add-Ons<br>(Sold Separately):</h4>
+                    <div class="card-body">                      
+                        <h5>Extra 6 Hour Block (8 AM - 2 PM)</h5>
+                        <p class="wedding-price">$499.00</p>                     
+                        <h5>Fountain Drink Machine Rental</h5>
+                        <p class="wedding-price">$199.00</p>
+                        <h5>Disposable Table Covers, Cups, and Flatware</h5>
+                        <p class="wedding-price">$199.00</p>
+                        <h5>Canned Beer (by the case)</h5>
+                        <p class="wedding-price">Cost varies based on drink</p>
+                        <h5>Bachelor / Bachelorette Party Golf Rounds</h5>
+                        <p class="wedding-price">Cost is based on prices listed on the Crane Field Website</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="py-4 mt-4">
+            <div class="container">
+                <h2 class="text-center">Event Booking</h2>
+                <form class="mb-4">
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label"><span class="text-tertiary">*</span>First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="E.g. John" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label"><span class="text-tertiary">*</span>Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="E.g. Doe" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="form-label"><span class="text-tertiary">*</span>Phone Number</label>
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="E.g. 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="packageSelect" class="form-label"><span class="text-tertiary">*</span>Choose your Wedding Package: </label>
+                        <select id="packageSelect" class="form-select" required>
+                            <option>-</option>
+                            <option value="gold">Gold Package Including Booking Fee</option>
+                            <option value="silver">Silver Package Including Booking Fee</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 ps-0">
+                        <fieldset class="pe-0">
+                            <legend class="pe-0">Add-ons (Optional)</legend>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="addOn1">
+                                <label class="form-check-label" for="addOn1">Extra 6 Hour Block (8 AM - 2 PM)</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="addOn2">
+                                <label class="form-check-label" for="addOn2">Fountain Drink Machine Rental</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="addOn3">
+                                <label class="form-check-label" for="addOn3">Disposable Table Covers, Cups, and Flatware</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="eventDate" class="form-label"><span class="text-tertiary">*</span>Event Date</label>
+                        <input type="date" class="form-control" id="eventDate" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="eventName" class="form-label"><span class="text-tertiary">*</span>Event Name</label>
+                        <input type="text" class="form-control" id="eventName" placeholder="E.g. John and Jane's Wedding" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="eventType" class="form-label"><span class="text-tertiary">*</span>Event Type</label>
+                        <input type="text" class="form-control" id="eventType" placeholder="E.g. Wedding Ceremony, Reception, etc." required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="street" class="form-label"><span class="text-tertiary">*</span>Street Address</label>
+                        <input type="text" class="form-control" id="street" placeholder="E.g. 123 Main St" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="apartment" class="form-label">Street Address Line 2 (optional)</label>
+                        <input type="text" class="form-control" id="apartment" placeholder="E.g. Apt 1A">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="city" class="form-label"><span class="text-tertiary">*</span>City</label>
+                        <input type="text" class="form-control" id="city" placeholder="E.g. Clinton" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="state" class="form-label"><span class="text-tertiary">*</span>State</label>
+                        <input type="text" class="form-control" id="state" placeholder="E.g. Utah" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="zip" class="form-label"><span class="text-tertiary">*</span>Zip code</label>
+                        <input type="text" class="form-control" id="zip" placeholder="E.g. 84015" required>
+                    </div>
+                    
+                    <a href="agreement.html#eventAgreementContainer">Read Crane Field's Clubhouse Event Agreement</a>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                        <label class="form-check-label" for="exampleCheck1"><span class="text-tertiary">*</span>I have Read and Accept Crane Field's Clubhouse Event Agreement</label>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </section>      
+    </main>
+
+    <footer class="text-center border-top">
+        <section class="container w-75 p-4 mt-4">
+            <div class="row">
+                <div class="col col-12 col-lg-4 align-items-center justify-content-center text-center">
+                    <div class="d-flex justify-content-center">
+                        <img class=" img-fluid horseshoe-logo" src="images/lucky_Golf_Horseshoe_Favicon.png" alt="Lucky.golf Horseshoe Logo">
+                        <h2 class="m-0 p-2 fs-3">Lucky.golf</h2>
+                    </div>
+                    <p class="pt-4 mx-1">Official Pro Shop of Crane Field and Remuda Golf Courses </p>
+                    
+                    <div class="mb-4 mb-lg-0 pt-4">
+                        <h4 class="py-2">Socials</h4>
+                        <div class="d-flex gap-4 justify-content-center">
+                            <a href="https://www.facebook.com/remudagolf" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/remudagolf" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/cranefieldgolf" target="_blank">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mx-auto mb-4 d-lg-none">   
+
+                <div class="col col-12 col-lg-4 align-items-center text-start mb-4 mb-lg-0 ">
+                    <div class="d-flex flex-column justify-content-center align-items-center text-start">
+                        <h4 class="py-2">Quick Links</h4>
+                        <ul>
+                            <li>
+                                <a href="events.html#weddings">Weddings</a>
+                            </li>
+                            <li>
+                                <a href="events.html">Events</a>
+                            </li>
+                            <li>
+                                <a href="tournaments.html">Tournaments</a>
+                            </li>
+                            <li>
+                                <a href="lessons.html">Lessons</a>
+                            </li>
+                            <li>
+                                <a href="associations.html">Associations</a>
+                            </li>
+                            <li>
+                                <a href="gifts.html">Gifts</a>
+                            </li>
+                            <li>
+                                <a href="https://www.cranefieldgolf.com/" target="_blank">Crane Field Golf Course</a>
+                            </li>
+                            <li>
+                                <a href="https://www.remudagolf.com/" target="_blank">Remuda Golf Course</a>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+
+                <hr class="mx-auto mb-4 d-lg-none"> 
+
+                <div class="col col-12 col-lg-4 align-items-center text-center mb-3 mb-lg-0 justify-content-center">
+                    <h4 class="py-2">Golfer Freebies</h4>
+                    <p>Don't miss out on the action! Subscribe by email or text to receive freebies including monthly golf news, and giveaway contests.</p>
+                    <a id="newsletterButton" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
+                </div>
+            </div>
+            
+            <hr class="mt-4">
+
+            <div id="copyrightContainer" class="mx-0 p-4">
+                <p class="m-0">Lucky.Golf &copy; 2026 Axxion Development llc and affiliate golf courses. All Rights Reserved. Privacy. Terms.</p>
+            </div>
+        </section>
+    </footer>
+
+     <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>
