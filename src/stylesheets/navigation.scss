@@ -54,6 +54,15 @@ header{
 
             }
         }
+
+        img{
+            outline: 1px solid transparent;
+            border-radius: 12px;
+            &:hover{
+                outline-color: $primary;
+                outline-offset: 4px;
+            }
+        }
         
     }
 }

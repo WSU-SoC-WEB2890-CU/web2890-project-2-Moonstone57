@@ -76,358 +76,397 @@
     </nav>
 
     <main id="associationsContainer">
-        <section class="text-center text-white py-4 mb-4" id="associationHeroContainer">
-            <h1 class="mb-2 p-2">Weekly Association Membership</h1>
-            <h2>Remuda and Crane Field Golf Courses</h2>
-            <img class="p-2 img-fluid" src="images/weekly_competition.jpeg" alt="Association Weekly Competition flyer">
-            <div class="container">
-                <h3 class="mt-4">Association Member Benefits</h3>
-                <p class="text-start p-1">We take pride in creating a lively and captivating environment. Anticipate fun Socials, the Wheel of Prizes, Member Appreciation Week, Special Events, complimentary treats, and a continually growing selection of member benefits!</p>
-                <div class="d-flex justify-content-center mx-3">
-                    <ul class="text-start list-unstyled">
-                        <li><i class="bi bi-check-circle me-3"></i>Free Prize Wheel on Opening Day</li>
-                        <li><i class="bi bi-check-circle me-3"></i>Win Pro Shop Credits</li>
-                        <li><i class="bi bi-check-circle me-3"></i>Weekly Competitive Events</li>
-                        <li><i class="bi bi-check-circle me-3"></i>In-House Handicaps</li>
-                        <li><i class="bi bi-check-circle me-3"></i>Member Appreciation Events</li>
-                    </ul>
-                </div>
-            </div>
-            <button id="associationHeroButton">Join an Association Now!</button>
-        </section>
+        <h1 id="associationsTitle" class="p-4 text-center mb-4">Associations</h1>
 
         <section id="associationPrices" class="text-center container-fluid mb-4">
-            <h3>2026 Game Fees & Membership Dues</h3>
+            <h2>2026 Game Fees & Membership Dues</h2>
+            
             <div class="card w-75 mx-auto mb-4">
-                <h4 class="p-4 text-white card-header">Crane Field</h4>
+                <h3 class="p-4 text-white card-header">Crane Field</h3>
                 <div class="card-body">
-                    <h5 class="mb-3">Men | Senior Men | Women</h5>
+                    <h4 class="mb-3">Men | Senior Men | Women</h4>
                     <p><span class="text-tertiary fw-bold">$50</span> Annual Membership Dues</p>
                     <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
+                    <hr class="w-75 mx-auto">
                     <button class="text-black">Join an Association Now!</button>
                 </div>
             </div>
 
             <div class="card w-75 mx-auto mb-4">
-                <h4 class="p-4 text-white card-header">Remuda</h4>
+                <h3 class="p-4 text-white card-header">Remuda</h3>
                 <div class="card-body">
-                    <h5>Men | Senior Men</h5>
+                    <h4>Men | Senior Men</h4>
                     <p><span class="text-tertiary fw-bold">$75</span> Annual Membership Dues</p>
                     <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
                     <p><span class="text-tertiary fw-bold">$10</span> Side Game Optional</p>
                     <hr class="w-75 mx-auto">
-                    <h5>Women</h5>
+                    <h4>Women</h4>
                     <p><span class="text-tertiary fw-bold">$40</span> Annual Membership Dues</p>
                     <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
                     <hr class="w-75 mx-auto">
-                    <h5>Co-Ed Couples</h5>
+                    <h4>Co-Ed Couples</h4>
                     <p>Remuda Men's and Women's Membership (See above.)</p>
                     <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
+                    <hr class="w-75 mx-auto">
                     <button class="text-black">Join an Association Now!</button>
                 </div>
             </div>
         </section>
 
-        <section id="associationScheduleContainer" class="mb-4 py-4 text-white">
-            <h3 class="text-center">Weekly Nine Hole Events</h3>
+        <section id="benefitsSection" class="py-5">
+            <article class="d-flex flex-column flex-lg-row px-4 align-items-center">
+                <img class="img-fluid p-lg-2 mb-3 mb-lg-0" src="images/weekly_competition.jpeg" alt="Association Weekly Competition flyer">
+                <div class="container d-flex flex-column">
+                    <h2 class="fs-3 text-center">Association Member Benefits</h2>
+                    <p class="text-center p-1 px-lg-3 mx-auto">We take pride in creating a lively and captivating environment. Anticipate fun Socials, the Wheel of Prizes, Member Appreciation Week, Special Events, complimentary treats, and a continually growing selection of member benefits!</p>
+                    <div class="d-flex justify-content-center mx-3">
+                        <ul class="text-start list-unstyled">
+                            <li><i class="bi bi-check-circle me-3"></i>Free Prize Wheel on Opening Day</li>
+                            <li><i class="bi bi-check-circle me-3"></i>Win Pro Shop Credits</li>
+                            <li><i class="bi bi-check-circle me-3"></i>Weekly Competitive Events</li>
+                            <li><i class="bi bi-check-circle me-3"></i>In-House Handicaps</li>
+                            <li><i class="bi bi-check-circle me-3"></i>Member Appreciation Events</li>
+                        </ul>
+                    </div>
+                    <button id="associationHeroButton" class="w-50 mx-auto">Join an Association Now!</button>
+                </div>
+            </article>
+            
+        </section>
+
+        <section id="associationScheduleContainer" class="container mb-4 py-4 text-white text-center">
+            <h2 id="associationScheduleTitle" class="text-center">Weekly Nine Hole Events</h2>
             <p class="mx-4 px-4">Flexibility is a key feature of the Association. Make a tee time and play any time on your designated days of the week. Each week we play a nine hole stroke play tournament, or other game. (<a href="https://www.cranefieldgolf.com/calendar/" target="_blank">See public calendar.</a>)</p>
-            <div id="scheduleCards">
+            <div id="scheduleCards" class="d-flex gap-4">
                 <div class="card w-75 mx-auto mb-4 text-black">
-                    <h4 class="p-4 text-white card-header">Crane Field</h4>
+                    <h3 class="p-4 text-white card-header">Crane Field</h3>
                     <div class="card-body">
-                        <h5 class="mb-3">Senior Men's (55+) Division</h5>
+                        <h4 class="mb-3">Senior Men's (55+) Division</h4>
                         <p>Play on Monday or Tuesday</p>
                         <hr class="w-75 mx-auto">
-                        <h5 class="mb-3">Men's Division</h5>
+                        <h4 class="mb-3">Men's Division</h4>
                         <p>Play on Wednesday or Thursday</p>
                         <hr class="w-75 mx-auto">
-                        <h5 class="mb-3">Women's Division</h5>
+                        <h4 class="mb-3">Women's Division</h4>
                         <p>Play on Tuesdays</p>
-                        <button class="text-black">Join an Association Now!</button>
+                        <hr class="w-75 mx-auto">
+                    </div>
+                    <div class="p-3">
+                        <button class="text-black mt-auto">Join an Association Now!</button>
                     </div>
                 </div>
 
                 <div class="card w-75 mx-auto mb-4 text-black">
-                    <h4 class="p-4 text-white card-header">Remuda</h4>
-                    <div class="card-body">
-                        <h5 class="mb-3">Senior Men's (55+) Division</h5>
+                    <h3 class="p-4 text-white card-header">Remuda</h3>
+                    <div class="card-body pb-0">
+                        <h4 class="mb-3">Senior Men's (55+) Division</h4>
                         <p>Play on Monday or Tuesday</p>
                         <hr class="w-75 mx-auto">
-                        <h5 class="mb-3">Men's Division</h5>
+                        <h4 class="mb-3">Men's Division</h4>
                         <p>Play on Wednesday or Thursday</p>
                         <hr class="w-75 mx-auto">
-                        <h5 class="mb-3">Women's Division</h5>
+                        <h4 class="mb-3">Women's Division</h4>
                         <p>Play on Monday or Tuesday</p>
                         <hr class="w-75 mx-auto">
-                        <h5 class="mb-3">Couples Division</h5>
-                        <p>Play on Friday</p>
-                        <button class="text-black">Join an Association Now!</button>
+                        <h4 class="mb-3">Couples Division</h4>
+                        <p class="m-0 pb-0">Play on Friday</p>
+                        <hr class="w-75 mx-auto">
+                    </div>
+                    <div class="p-3 pt-2">
+                        <button class="text-black mt-auto">Join an Association Now!</button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="my-4 container">
-            <h3 class="text-center">Frequently Asked Questions</h2>
-            <h4>General Questions</h4>
-            <div class="accordion container mb-4" id="genQuestionsAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What tees do Association Members play?
-                    </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            Men play Blue Tees each weekly event unless modified by a specific game. Sr. Men play White Tees each week unless modified by a specific game. Super Seniors over age 70 may play from whatever tee they choose, including the most forward tees.
+        <section id="faq" class="mb-5">
+            <h2 class="text-center mx-0 py-4 text-white" id="FAQTitle">Frequently Asked Questions</h2>
+            <article id="associationAccordion" class="my-4 container w-75 pb-3">
+                <h3 class="ms-3 mt-5">General Questions</h3>
+                <div class="accordion container mb-4" id="genQuestionsAccordion">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h5 class="my-auto">Are there weekly fees due?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                Only if you play in the weekly game, you will need to pay the game fee and the optional side bet game fee. Green fees are also be required to play on the course. (Most members buy discounted punch passes when they know they will play 20 or more events.)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 class="my-auto">Do I have to play with another member when I compete?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                Yes, you need to play with another current member who can sing and attest your scorecard.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h5 class="my-auto">How do participation points work?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                You will accumulate points throughout the season for playing in Association sponsored events. Automatic participation points are awarded to all who play each week, more points depending where you place and how many association events you play in. Some bonus events require players to have a minimum amount of points to play. (Meaning you have to use some points to buy in, and you can’t join the Association just in time to enter the tournament.) Points are also used to buy raffle tickets and prizes at the end of the season.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h5 class="my-auto">Do I need to have a team member?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                No because most events are individually scored. We do occasionally have scrambles where two members from the association team up. We can help you find a partner if you don’t have one. A lot of members do sign up with friends so they can golf together. You must play your weekly games with at least on other registered member. Your scorecard must be attested by another member of the association to count.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h5 class="my-auto">Is there no junior league at Crane Field?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                Not at this time. There is no weekly competitive league similar to the men’s. However, we do host a summer learning academy for juniors that includes weekly classes and a closing tournament. The Association is for adults 18 and over.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <h5 class="my-auto">Why did I not win any money even though I shot below my average score?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                Winnings are dependent on many factors including the performance of other players, the pool of players who participated that week, and the size of flights. If you beat your average score it is likely you will be in the winnings, but not guaranteed because there may be other players who also performed better than average.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Am I required to play every week?
-                    </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            No. Play as few or as many events at you like. The more you play, the more participation points you can earn for year end Cup standings and raffle tickets.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Are there weekly fees due?
-                    </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            Only if you play in the weekly game, you will need to pay the game fee and the optional side bet game fee. Green fees are also be required to play on the course. (Most members buy discounted punch passes when they know they will play 20 or more events.)
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        Do I have to play with another member when I compete?
-                    </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            Yes, you need to play with another current member who can sing and attest your scorecard.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        How do participation points work?
-                    </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            You will accumulate points throughout the season for playing in Association sponsored events. Automatic participation points are awarded to all who play each week, more points depending where you place and how many association events you play in. Some bonus events require players to have a minimum amount of points to play. (Meaning you have to use some points to buy in, and you can’t join the Association just in time to enter the tournament.) Points are also used to buy raffle tickets and prizes at the end of the season.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Do I have to play in the 18 Hole Saturday Events?
-                    </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            No, just like the weekly events, they are optional. The more of them you play in, the more participation points you can earn for year end Cup standings and raffle tickets.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        What days and times do Association Members play?
-                    </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            Men may plan anytime Wednesdays or Thursdays. Senior men may play anytime Mondays or Tuesdays. (On rare occasion there may be a holiday or rain day that causes us to extend play one day. Also monthly 18 hole tournaments may be played anytime on Saturdays.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        If I miss a social event or member appreciation giveaway, can I get reimbursed?
-                    </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            Unfortunately, due to the nature of most of these member benefits, they are “use it or lose it” bonuses. We realize it is impossible for everyone’s schedule to attend each and every event, but we try to do several events to make up for this.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        Do I need to have a team member?
-                    </button>
-                    </h2>
-                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            No because most events are individually scored. We do occasionally have scrambles where two members from the association team up. We can help you find a partner if you don’t have one. A lot of members do sign up with friends so they can golf together. You must play your weekly games with at least on other registered member. Your scorecard must be attested by another member of the association to count.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                        Is there no junior league at Crane Field?
-                    </button>
-                    </h2>
-                    <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            Not at this time. There is no weekly competitive league similar to the men’s. However, we do host a summer learning academy for juniors that includes weekly classes and a closing tournament. The Association is for adults 18 and over.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                        Is there a schedule of events available?
-                    </button>
-                    </h2>
-                    <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            Yes, the presidents sets up a schedule of events and posts it at the clubhouse, online, and makes copies for members to take home. So it’s important to read the calendar carefully. If you did not receive an email link to the calendar, there is a printed copy at the clubhouse.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTweleve" aria-expanded="false" aria-controls="collapseTweleve">
-                        Why did I not win any money even though I shot below my average score?
-                    </button>
-                    </h2>
-                    <div id="collapseTweleve" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
-                        <div class="accordion-body">
-                            Winnings are dependent on many factors including the performance of other players, the pool of players who participated that week, and the size of flights. If you beat your average score it is likely you will be in the winnings, but not guaranteed because there may be other players who also performed better than average.
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <h4 class="p-1 mt-4">Handicap Questions</h4>
-            <div class="accordion container" id="handicapQuestionsAccordion">
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Do I need a UGA (Utah Golf Association) Membership or active USGA Handicap index to play?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            No, we keep track of in-house handicaps so you don’t need to be a UGA member. If you are new we can use your current handicap index a a benchmark to start from. Otherwise you will have to turn in a couple rounds of golf first to establish a handicap.
+                <h3 class="mt-5 ms-3">Schedule Questions</h3>
+                <div class="accordion container" id="scheduleQuestionsAccordion">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                <h5 class="my-auto">What tees do Association Members play?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                Men play Blue Tees each weekly event unless modified by a specific game. Sr. Men play White Tees each week unless modified by a specific game. Super Seniors over age 70 may play from whatever tee they choose, including the most forward tees.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                <h5 class="my-auto">Am I required to play every week?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                No. Play as few or as many events at you like. The more you play, the more participation points you can earn for year end Cup standings and raffle tickets.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                <h5 class="my-auto">Do I have to play in the 18 Hole Saturday Events?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                No, just like the weekly events, they are optional. The more of them you play in, the more participation points you can earn for year end Cup standings and raffle tickets.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                <h5 class="my-auto">What days and times do Association Members play?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                Men may plan anytime Wednesdays or Thursdays. Senior men may play anytime Mondays or Tuesdays. (On rare occasion there may be a holiday or rain day that causes us to extend play one day. Also monthly 18 hole tournaments may be played anytime on Saturdays.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                <h5 class="my-auto">If I miss a social event or member appreciation giveaway, can I get reimbursed?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseEleven" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                Unfortunately, due to the nature of most of these member benefits, they are “use it or lose it” bonuses. We realize it is impossible for everyone’s schedule to attend each and every event, but we try to do several events to make up for this.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                <h5 class="my-auto">Is there a schedule of events available?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#genQuestionsAccordion">
+                            <div class="accordion-body">
+                                Yes, the presidents sets up a schedule of events and posts it at the clubhouse, online, and makes copies for members to take home. So it’s important to read the calendar carefully. If you did not receive an email link to the calendar, there is a printed copy at the clubhouse.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Can you give me more details about establishing an in house Handicap?
-                    </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            Members with UGA handicaps may use their index to immediately establish a house handicap, but you do not have to be a UGA membership to play. If you do not have a UGA membership you simply need to play two 18 hole rounds (or two nine hole scores on each side) to establish an in-house index. Not difficult at all, and we do all the work entering your scores each week to keep your handicap accurate. Once established, your handicap is used for Low Net events and for determining flight divisions.
+
+                <h3 class="ms-3 mt-5">Handicap Questions</h3>
+                <div class="accordion container" id="handicapQuestionsAccordion">
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                <h5 class="my-auto">Do I need a UGA (Utah Golf Association) Membership or active USGA Handicap index to play?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                No, we keep track of in-house handicaps so you don’t need to be a UGA member. If you are new we can use your current handicap index a a benchmark to start from. Otherwise you will have to turn in a couple rounds of golf first to establish a handicap.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                <h5 class="my-auto">Can you give me more details about establishing an in house Handicap?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseFourteen" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                Members with UGA handicaps may use their index to immediately establish a house handicap, but you do not have to be a UGA membership to play. If you do not have a UGA membership you simply need to play two 18 hole rounds (or two nine hole scores on each side) to establish an in-house index. Not difficult at all, and we do all the work entering your scores each week to keep your handicap accurate. Once established, your handicap is used for Low Net events and for determining flight divisions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                                <h5 class="my-auto">Why have I suddenly changed flights without my handicap changing?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseFifteen" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                Flights are automatically generated by the computer system every week. Flight 1 contains the lowest handicaps, Flight 2 contains the next lowest, and so forth. As the individuals who play vary from week to week, this can result in a player being occasionally assigned to a flight they are not accustomed to playing.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                                <h5 class="my-auto">Do you use 9 or 18-hole handicaps in your Association?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseSixteen" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                As most of our association events are 9-hole events, our handicaps are kept as 9-hole handicaps. When we have 18-hole events, we double the handicaps.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                                <h5 class="my-auto">How do the Tees I play affect my handicap?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseSeventeen" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                When using handicaps, the tees you play will not give you much of an advantage. The slopes for each Tee are used in the handicap calculation. If someone plays from forward tees and consistently shoots lower scores on average, a lower handicap will result, and level out the advantage. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                                <h5 class="my-auto">Why did my handicap go down even though I shot above my average score?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseEighteen" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                Handicap calculations are based upon the 10 most recent scores (minus the score that is still in process of being scored.) Every time a new score is entered the oldest score is dropped. Sometimes this results in handicap movement in the opposite direction of what is expected based only on the most recent score. Handicap calculation also drops high and low scores which helps prevent sandbagging.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                                <h5 class="my-auto">Does my handicap index reset at the beginning of each season?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseNineteen" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                No, we start with your previous year handicap. You do not start at zero unless you are a brand new player without any benchmark handicap index such as a UGA index or a handicap from another association. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                                <h5 class="my-auto">Can I have a copy of the Association Bylaws with handicap rules?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseTwenty" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                Yes, the most recent copy is posted online and in the Facebook Group page. You can also request a copy through the website contact-us page.  No handicap system is perfect, but we have researched many different software solutions and landed on the current in-house calculator. Rest assured it is evenly applied to all members in the association.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
+                                <h5 class="my-auto">Do I need a UGA membership for my handicap index?</h5>
+                                <i class="bi bi-caret-down-fill fs-5"></i>
+                            </button>
+                        </h4>
+                        <div id="collapseTwentyOne" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
+                            <div class="accordion-body">
+                                No, we keep our in in-house handicap indexes. They are used to calculate net scores on the majority of our tournament events. They are based off tournament rounds only, and are more accurate.
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Why have I suddenly changed flights without my handicap changing?
-                    </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            Flights are automatically generated by the computer system every week. Flight 1 contains the lowest handicaps, Flight 2 contains the next lowest, and so forth. As the individuals who play vary from week to week, this can result in a player being occasionally assigned to a flight they are not accustomed to playing.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Do you use 9 or 18-hole handicaps in your Association?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            As most of our association events are 9-hole events, our handicaps are kept as 9-hole handicaps. When we have 18-hole events, we double the handicaps.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                        How do the Tees I play affect my handicap?
-                    </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            When using handicaps, the tees you play will not give you much of an advantage. The slopes for each Tee are used in the handicap calculation. If someone plays from forward tees and consistently shoots lower scores on average, a lower handicap will result, and level out the advantage. 
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        Why did my handicap go down even though I shot above my average score?
-                    </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            Handicap calculations are based upon the 10 most recent scores (minus the score that is still in process of being scored.) Every time a new score is entered the oldest score is dropped. Sometimes this results in handicap movement in the opposite direction of what is expected based only on the most recent score. Handicap calculation also drops high and low scores which helps prevent sandbagging.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                        Does my handicap index reset at the beginning of each season?
-                    </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            No, we start with your previous year handicap. You do not start at zero unless you are a brand new player without any benchmark handicap index such as a UGA index or a handicap from another association. 
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        Can I have a copy of the Association Bylaws with handicap rules?
-                    </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            Yes, the most recent copy is posted online and in the Facebook Group page. You can also request a copy through the website contact-us page.  No handicap system is perfect, but we have researched many different software solutions and landed on the current in-house calculator. Rest assured it is evenly applied to all members in the association.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                        Do I need a UGA membership for my handicap index?
-                    </button>
-                    </h2>
-                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#handicapQuestionsAccordion">
-                        <div class="accordion-body">
-                            No, we keep our in in-house handicap indexes. They are used to calculate net scores on the majority of our tournament events. They are based off tournament rounds only, and are more accurate.
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </article>
         </section>
     </main>
 
@@ -435,10 +474,12 @@
         <section class="container w-75 p-4 mt-4">
             <div class="row">
                 <div class="col col-12 col-lg-4 align-items-center justify-content-center text-center">
+                    
                     <div class="d-flex justify-content-center">
                         <img class=" img-fluid horseshoe-logo" src="images/lucky_Golf_Horseshoe_Favicon.png" alt="Lucky.golf Horseshoe Logo">
                         <h2 class="m-0 p-2 fs-3">Lucky.golf</h2>
                     </div>
+                    
                     <p class="pt-4 mx-1">Official Pro Shop of Crane Field and Remuda Golf Courses </p>
                     
                     <div class="mb-4 mb-lg-0 pt-4">

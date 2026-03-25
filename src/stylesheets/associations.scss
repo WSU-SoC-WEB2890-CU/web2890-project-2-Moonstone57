@@ -1,52 +1,52 @@
 @use '_custom' as *;
 
 #associationsContainer{
-    #associationHeroContainer{
+    #associationsTitle{
         background-color: $secondary !important; 
-        i{
-            color: $primary;
-        }
-        #associationHeroButton{
-            @include button-style;
-            color: black;
-        }
-    }
-
-    #associationScheduleContainer{
-        background-color: $secondary !important;
-        padding: 0 2rem; 
-        a{
-            color: $primary;
-        }
-
-        #scheduleCards{
-            text-align: center;
-
-            .card{
-                border-color: $tertiary !important;
-            }
-
-            .card-header{
-                background-color: $tertiary;
-                
-            }
-
-            button{
-                @include button-style;
-                background-color: $primary;
-                color: white !important;
-            }
-        }
+        color: white;
     }
 
     #associationPrices{
         button{
             @include button-style;
-            
-            &:hover{
-                color: white !important;
+        }
+    }
+
+    #benefitsSection{
+        background-color: $secondary;
+        color: white;
+
+        i{
+            color: $primary;
+        }
+        
+        #associationHeroButton{
+            @include button-style;
+            color: black;
+        }
+
+        img{
+            width: 80%;
+            height: 80%;
+            @include media-breakpoint-up(lg){
+                width: 50%;
+                height: 50%;
             }
         }
+    }
+
+    #associationScheduleContainer{
+        #associationScheduleTitle, p{
+            color: $secondary;
+            a{
+                color: $tertiary;
+            }
+        }
+
+        button{
+            @include button-style;
+        }
+        
     }
 
     .card{
@@ -54,42 +54,54 @@
     }
 
     #faq{
-        .accordion-item{
-            border-radius: 15px;
-            margin: 5px;
-            
-            .accordion-button{
-                background-color: $tertiary !important;
-                color: white;
-                padding: 1.25rem;
-                margin: 0;
-                border: 2px solid transparent;
+        #FAQTitle{
+            background-color: $secondary;
+        }
 
-                &:hover{
+        #associationAccordion{
+            .accordion-item{
+                border-radius: 15px;
+                margin: 5px;
+                
+                .accordion-button{
                     background-color: $secondary !important;
-                    color: white !important;
-                    margin: 0;
-                    padding: 1.25rem;
-                }
-
-                &:not(.collapsed){
-                    background-color: $tertiary;
-                    color: white !important;
-                    &:hover{
-                        background-color: $secondary !important;
-                        color: white !important;
-                    }
-                }
-
-                &:focus{
-                    border: 2px solid $tertiary;
-                    box-shadow: 0 0 0 .25rem rgba($tertiary, .25);
-
-                }
-
-                &::after{
                     color: white;
-                    filter: none;
+                    padding: 1.25rem;
+                    margin: 0;
+                    border: 2px solid transparent;
+                    display: flex;
+                    justify-content: space-between;
+
+                    &:hover{
+                        background-color: $tertiary !important;
+                        color: white !important;
+                        margin: 0;
+                        padding: 1.25rem;
+                    }
+
+                    &:not(.collapsed){
+                        background-color: $tertiary;
+                        color: white !important;
+                        &:hover{
+                            background-color: $secondary !important;
+                            color: white !important;
+                        }
+
+                        &::after{
+                            display: none;
+                        }
+                    }
+
+                    &:focus{
+                        border: 2px solid $tertiary;
+                        box-shadow: 0 0 0 .25rem rgba($tertiary, .25);
+                    }
+
+                    &::after{
+                        color: white;
+                        filter: none;
+                        display: none;
+                    }
                 }
             }
         }
