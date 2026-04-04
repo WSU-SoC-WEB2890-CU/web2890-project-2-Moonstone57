@@ -11,20 +11,20 @@
 <body>
     <header class="container-fluid d-none d-lg-flex">
         <div class="d-flex w-100 justify-content-between align-items-center p-3 gap-2">
-        <a href="index.html" class="d-flex w-25">
-            <img class="img-fluid" src="images/logos.png" alt="logos">
-        </a>
-        <form class="d-flex flex-grow-1 mx-4" role="search">
-            <div class="input-group p-1 w-100">
-            <span class="input-group-text bg-transparent border-0">
-                <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search p-0"></i></button>
-            </span>
-            <input id="searchBar" class="form-control me-2 p-0 border-0 bg-transparent" type="search" placeholder="Search..." aria-label="Search"/>
+            <a href="index.html" class="d-flex w-25">
+                <img class="img-fluid" src="images/logos.png" alt="logos">
+            </a>
+            <form class="d-flex flex-grow-1 mx-4" role="search">
+                <div class="input-group p-1 w-75">
+                <span class="input-group-text bg-transparent border-0 ">
+                    <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search px-1"></i></button>
+                </span>
+                <input id="searchBar" class="form-control me-2 p-0 border-0 bg-transparent" type="search" placeholder="Search..." aria-label="Search"/>
+                </div>
+            </form>
+            <div class="d-flex align-items-center justify-content-end me-3">
+                <a href="cart.html" id="shoppingCartLink" class="w-100"><i id="shoppingCartIcon" class="bi bi-cart3 fs-2 text-black py-2"></i></a>  
             </div>
-        </form>
-        <a class="d-flex align-items-center justify-content-end" href="cart.html">
-            <i class="bi bi-cart3 fs-2 text-black"></i>
-        </a>  
         </div>
     </header>
 
@@ -41,7 +41,7 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-lg-auto d-flex">
-                    <li class="nav-item">
+                    <li class="nav-item d-lg-none">
                         <form class="d-flex col my-2 d-lg-none" role="search">
                         <div class="input-group p-1 m-0">
                             <span class="input-group-text bg-transparent border-0 ">
@@ -52,7 +52,7 @@
                         </form>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="associations.html">Associations</a>
@@ -64,7 +64,7 @@
                         <a class="nav-link" href="gifts.html">Gifts</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="lessons.html">Lessons</a>
+                        <a class="nav-link active" aria-current="page" href="lessons.html">Lessons</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="tournaments.html">Tournaments</a>
@@ -76,23 +76,32 @@
 
     <main>
         <h1 id="lessonsTitle" class="p-4 text-center mb-4">Lessons</h1>
-        <section class="container mt-4 pt-4">
+        <div class="text-center">
+            <h2 class="text-center">Learn to Golf</h2>
+            <p>Invest in yourself and take golf lessons this year!</p>
+        </div>
+        <section class="container my-4 pt-4">
             <div id="lessonsCards" class="row d-flex justify-content-around mx-2 mx-lg-0">
+                
                 <div class="col-12 col-lg-5 card p-0 mb-4">
-                    <div class="card-header text-white p-4 text-center">
+                    <img src="images/Couple_golfers.jpg" class="card-img-top" alt="A female and male golfer">
+                    <div class="card-header p-2 pt-3 mb-3 text-center">
                         <h3>Personalized One-On-One Lessons</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body pt-0">
                         <p>If you are ready to shave points off your scorecard and get serious about your golf game, golf lesson packages will really make a difference. For anything worth doing, it is worth doing right, which is why we recommend the 10 or 20 lesson package first and foremost. This package can shave 5-10 points off your score. Your instructor will work one on one with you and keep track of your progress in a systematic way.</p>
                         <p>If time is a constraint we also offer 1, 3, and 5 lesson packages that will give you an edge over 90 percent of your friends. The magic of lessons, is that no one can take the knowledge away that you gain from each class. You get to hold on to it for a lifetime.</p>
                         <p class="mb-0">When you buy a lesson punch card, we will include a bonus bucket of range balls with every lesson! Make the decision today to get what you want, better skills and more respect. You can have it all!</p>
                     </div>
+                    <a href="lessonForm.html" class="btn mt-auto m-3">Sign up for a lesson</a>
                 </div>
+                
                 <div class="col-12 col-lg-5 card p-0 mb-4">
-                    <div class="card-header text-white p-4 text-center">
+                    <img src="images/smart_start.png" class="card-img-top" alt="Smart Start Logo">
+                    <div class="card-header p-2 pt-3 mb-3 text-center">
                         <h3>SmartStart For Beginner Woman</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body pt-0">
                         <p><span class="fw-bold">Exclusively at Crane Field</span></p>
                         <p>SmartStart is your passport to an unforgettable summer of golf! Designed for new golfers, the SmartStart Golf Pass offers you the opportunity to play golf and practice on the range with at a discounted price.</p>
                         <p>Whether you're looking to quickly improve your game, or enjoy a relaxing summer on the course, the Crane Field SmartStart pass is your fast track to golf greatness!</p>
@@ -107,80 +116,40 @@
                         </ul>
                         <p class="mb-0">Plus, you’ll unlock deep discounts on starter club sets, essential gear, and logo merchandise - all designed to help you on your journey to golf greatness.</p>
                     </div>
+                    <a href="lessonForm.html" class="btn mt-auto m-3">Sign up for a lesson</a>
                 </div>
+                
                 <div class="col-12 col-lg-5 card p-0 mb-4 my-lg-4">
-                    <div class="card-header text-white p-4 text-center">
+                    <img src="images/adult_beginner.jpg" class="card-img-top" alt="Illustration of three golfers on a golf driving range.">
+                    <div class="card-header p-2 pt-3 mb-3 text-center">
                         <h3>Classes for Beginner Adults</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body pt-0">
                         <p class="fw-bold">Start Something New This Summer!</p>
                         <p>Our adult beginner golf course is the perfect starting point for men and women who want to learn the game in a relaxed, supportive setting. There are four classes, lasting an hour each, on Monday evenings. Enjoy a fun, encouraging, and educational environment designed to help beginners build skills and confidence from day one.</p>
                         <p class="mb-0">Whether you’re learning for fun, fitness, or professional networking, this course is the perfect introduction. Curriculum focuses on developing golf skills (full swing, short game, rules and etiquette) while keeping the experience fun and engaging. A fun, safe and educational environment designed with a beginner’s advancement in mind.</p>
                     </div>
+                    <a href="lessonForm.html" class="btn mt-auto m-3">Sign up for a lesson</a>
                 </div>
+                
                 <div class="col-12 col-lg-5 card p-0 mb-4 my-lg-4">
-                    <div class="card-header text-white p-4 text-center">
+                    <div class="d-flex h-100">
+                        <img src="images/remuda_junior_prep.png" class="w-50 h-100" alt="Remuda Junior Prep Academy Logo">
+                        <img src="images/Crane_Field_Junior_Prep.png" class="w-50 h-100" alt="Crane Field Junior Prep Academy Logo">
+                    </div>
+                    <div class="card-header p-2 pt-3 mb-3 text-center">
                         <h3>Junior Prep Academy Ages 11+</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body pt-0">
                         <p class="fw-bold">Master Your Game. Compete with Confidence. Achieve Your Goals.</p>
                         <p>Designed for golfers 11 and older, the Junior Prep Academy is composed of weekly classes during the summer. With a max of four students per class, personalized instruction and focused skill development is ensured.</p>
                         <p>Are you ready to take your golf game to the next level? Whether you’re preparing for high school tryouts, working toward a spot on a team, or striving to compete in tournaments, this program is designed to give you the edge you need to succeed.</p>
                         <p class="mb-0">This is tailored for junior golfers according to their ability. Every session is packed with personalized coaching, game-enhancing drills, and training that will elevate your skills and confidence on the course.</p>
                     </div>
+                    <a href="lessonForm.html" class="btn mt-auto m-3">Sign up for a lesson</a>
                 </div>
             </div>
-        </section>
-        <section id="lessonSignUp" class="py-4 mt-4">
-            <div class="container">
-                <h2 class="text-center">Lesson Sign Up</h2>
-                <form class="mb-4">
-                    <h3 class="mt-4">Contact Information</h3>
-                    <div class="mb-3">
-                        <label for="firstName" class="form-label"><span class="text-tertiary">*</span>First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="E.g. John" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="lastName" class="form-label"><span class="text-tertiary">*</span>Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="E.g. Doe" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="phoneNumber" class="form-label"><span class="text-tertiary">*</span>Phone Number</label>
-                        <input type="tel" class="form-control" id="phoneNumber" placeholder="E.g. 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                    </div>
-                    
-                    <h3 class="mt-4">Lesson Details</h3>
-                    <div class="mb-3">
-                        <label for="packageSelect" class="form-label"><span class="text-tertiary">*</span>Choose your Lesson Style:</label>
-                        <select id="packageSelect" class="form-select" required>
-                            <option>-</option>
-                            <option value="oneOnOne">Personalized One-On-One Lessons</option>
-                            <option value="smartStart">SmartStart For Beginner Woman</option>
-                            <option value="beginnerAdult">Classes for Beginner Adults</option>
-                            <option value="juniorPrep">Junior Prep Academy Ages 11+</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="locationSelect" class="form-label"><span class="text-tertiary">*</span>Choose your Location:</label>
-                        <select id="locationSelect" class="form-select" required>
-                            <option>-</option>
-                            <option value="craneField">Crane Field</option>
-                            <option value="Remuda">Remuda</option>
-                        </select>
-                    </div>
-                   
-                    <a href="agreement.html#lessonAgreementContainer">Read Student Waiver and Terms of Enrollment</a>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                        <label class="form-check-label" for="exampleCheck1"><span class="text-tertiary">*</span>I have Read and Accept the terms of the Student Waiver and Terms of Enrollment Agreement</label>
-                    </div>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>
-        </section>     
+        </section>    
     </main>
     
     <footer class="text-center border-top">
@@ -248,7 +217,9 @@
                 <div class="col col-12 col-lg-4 align-items-center text-center mb-3 mb-lg-0 justify-content-center">
                     <h4 class="py-2">Golfer Freebies</h4>
                     <p>Don't miss out on the action! Subscribe by email or text to receive freebies including monthly golf news, and giveaway contests.</p>
-                    <a id="newsletterButton" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
+                    <div class="mt-4 pt-2">
+                        <a id="newsletterButton" class="mt-4" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
+                    </div>
                 </div>
             </div>
             <hr class="mt-4">

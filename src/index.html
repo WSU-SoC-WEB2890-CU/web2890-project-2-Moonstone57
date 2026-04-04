@@ -12,23 +12,23 @@
 
 <body>
   <header class="container-fluid d-none d-lg-flex">
-    <div class="d-flex w-100 justify-content-between align-items-center p-3 gap-2">
-      <a href="index.html" class="d-flex w-25">
-        <img class="img-fluid" src="images/logos.png" alt="logos">
-      </a>
-      <form class="d-flex flex-grow-1 mx-4" role="search">
-        <div class="input-group p-1 w-100">
-          <span class="input-group-text bg-transparent border-0 ">
-            <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search p-0"></i></button>
-          </span>
-          <input id="searchBar" class="form-control me-2 p-0 border-0 bg-transparent" type="search" placeholder="Search..." aria-label="Search"/>
+      <div class="d-flex w-100 justify-content-between align-items-center p-3 gap-2">
+        <a href="index.html" class="d-flex w-25">
+          <img class="img-fluid" src="images/logos.png" alt="logos">
+        </a>
+        <form class="d-flex flex-grow-1 mx-4" role="search">
+          <div class="input-group p-1 w-75">
+            <span class="input-group-text bg-transparent border-0 ">
+                <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search px-1"></i></button>
+            </span>
+            <input id="searchBar" class="form-control me-2 p-0 border-0 bg-transparent" type="search" placeholder="Search..." aria-label="Search"/>
+          </div>
+        </form>
+        <div class="d-flex align-items-center justify-content-end me-3">
+            <a href="cart.html" id="shoppingCartLink" class="w-100"><i id="shoppingCartIcon" class="bi bi-cart3 fs-2 text-black py-2"></i></a>  
         </div>
-      </form>
-      <a class="d-flex align-items-center justify-content-end" href="cart.html">
-        <i class="bi bi-cart3 fs-2 text-black"></i>
-      </a>  
-    </div>
-  </header>
+      </div>
+    </header>
 
   <nav class="navbar navbar-expand-lg navbar-light p-3 w-100">
     <div class="container-fluid justify-content-between">
@@ -43,7 +43,7 @@
       </a>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav mx-lg-auto d-flex">
-          <li class="nav-item">
+          <li class="nav-item d-lg-none">
             <form class="d-flex col my-2 d-lg-none" role="search">
               <div class="input-group p-1 m-0">
                 <span class="input-group-text bg-transparent border-0 ">
@@ -93,45 +93,45 @@
       <h2 class="p-4">Specials</h2>
       <h3>Crane Field Early Bird Passes</h3>
       <p class="text-start"><span class="fw-bold">Don't miss out on this great promotion.</span> Get ready for another incredible season of golf with our Early Bird Digital Passes. These passes offer unbeatable discounts on rounds and range buckets for the entire season. Don’t miss this chance to play more and save big!</p>
-      <button class="mb-4">Buy an Early Bird Pass Now!</button>
+      <a class="mb-4 btn" href="cart.html">Buy an Early Bird Pass Now!</a>
       
       <h4 id="countdownTitle" class="mt-4 p-1">The countdown is on, so act fast!</h4>
       <div id="countdownContainer" class="row mt-0 fw-semibold mx-auto">
         <div class="col-3 d-flex align-items-center flex-column">
           <p class="fs-1" id="daysCounter">00</p>
-          <p class="fs-4">Days</p>
+          <h5>Days</h5>
         </div>
         <div class="col-3 d-flex align-items-center flex-column">
           <p class="fs-1" id="hoursCounter">00</p>
-          <p class="fs-4">Hours</p>
+          <h5>Hours</h5>
         </div>
         <div class="col-3 d-flex align-items-center flex-column">
           <p class="fs-1" id="minutesCounter">00</p>
-          <p class="fs-4">Minutes</p>
+          <h5>Minutes</h5>
         </div>
         <div class="col-3 d-flex align-items-center flex-column">
           <p class="fs-1" id="secondsCounter">00</p>
-          <p class="fs-4">Seconds</p>
+          <h5>Seconds</h5>
         </div>
       </div>
 
-      <div id="pricingCards" class="mx-lg-5 px-lg-4">
+      <div id="pricingCards" class="mx-lg-5 px-lg-5">
         <h4 class="p-1">Early Bird Pass Pricing</h4>
         <div class="card mb-4">
           <h4 class="text-white p-4 card-header">20 Punch Pass</h4>
           <div class="card-body d-flex justify-content-around">
-            <div>
+            <div class="w-50">
               <h6>Walking</h6>
               <p class="fw-bold text-tertiary pass-current-price pt-2">$229</p>
               <p class="text-decoration-line-through">$340 Regularly</p>
-              <button>Buy Walking Pass Now!</button>
+              <a class="btn" href="cart.html">Buy Walking Pass Now!</a>
             </div>
             <div class="divider"></div>
-            <div>
+            <div class="w-50">
               <h6>Riding</h6>
               <p class="fw-bold text-tertiary pass-current-price pt-2">$359</p>
               <p class="text-decoration-line-through">$540 Regularly</p>
-              <button>Buy Riding Pass Now!</button>
+              <a class="btn" href="cart.html">Buy Riding Pass Now!</a>
             </div>
           </div>
         </div>
@@ -139,18 +139,18 @@
         <div class="card mb-4">
           <h4 class="text-white p-4 card-header">40 Punch Pass</h4>
           <div class="card-body d-flex justify-content-around">
-            <div>
+            <div class="w-50">
               <h6>Walking</h6>
               <p class="fw-bold text-tertiary pass-current-price pt-2">$419</p>
               <p class="text-decoration-line-through">$680 Regularly</p>
-              <button>Buy Walking Pass Now!</button>
+              <a class="btn" href="cart.html">Buy Walking Pass Now!</a>
             </div>
             <div class="divider"></div>
-            <div>
+            <div class="w-50">
               <h6>Riding</h6>
               <p class="fw-bold text-tertiary pass-current-price pt-2">$649</p>
               <p class="text-decoration-line-through">$1,080 Regularly</p>
-              <button>Buy Riding Pass Now!</button>
+              <a class="btn" href="cart.html">Buy Riding Pass Now!</a>
             </div>
           </div>
         </div>
@@ -158,56 +158,56 @@
         <div class="card mb-4">
           <h4 class="text-white p-4 card-header">Medium Driving Range Buckets</h4>
           <div class="card-body d-flex justify-content-around">
-            <div>
+            <div class="w-50">
               <h6>60 Buckets</h6>
               <p class="fw-bold text-tertiary pass-current-price pt-2">$179</p>
               <p class="text-decoration-line-through">$360 Regularly</p>
-              <button>Buy Walking Pass Now!</button>
+              <a class="btn" href="cart.html">Buy Driving Range Pass Now!</a>
             </div>
             <div class="divider"></div>
-            <div>
+            <div class="w-50">
               <h6>80 Buckets</h6>
               <p class="fw-bold text-tertiary pass-current-price pt-2">$239</p>
               <p class="text-decoration-line-through">$480 Regularly</p>
-              <button>Buy Riding Pass Now!</button>
+              <a class="btn" href="cart.html">Buy Driving Range Pass Now!</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="testimonials" class="text-center container mb-4">
+    <section id="testimonials" class="text-center container mb-4 mx-auto">
       <h2>What Golfers Have to Say</h2>
       <div id="carousel" class="carousel slide text-white carousel-dark mx-4">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <div class="carousel-indicators gap-2">
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"><i class="bi bi-dash fs-2"></i></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"><i class="bi bi-dash fs-2"></i></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"><i class="bi bi-dash fs-2"></i></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"><i class="bi bi-dash fs-2"></i></button>
         </div>
-        <div class="carousel-inner p-4 my-4">
-          <div class="carousel-item active p-4">
+        <div class="carousel-inner py-3 my-4">
+          <div class="carousel-item active px-4 px-lg-0 py-3">
             <div class="d-flex align-items-center justify-content-center flex-column">
               <p class="w-75 px-lg-4">"Crane Field has beautiful fairways that are well marked. The greens are well managed and the staff is friendly and helpful. Thank you Crane Field!"</p>
               <p class="w-75 mb-2"><span class="fst-italic">Jaron P.</span></p>
               <p>Syracuse, UT</p>
             </div>
           </div>
-          <div class="carousel-item p-4">
+          <div class="carousel-item px-4 px-lg-0 py-3">
             <div class="d-flex align-items-center justify-content-center flex-column">
               <p class="w-75 px-lg-4">"When you have a slice as bad as mine Crane Field is a great place to play because of the open fairways and forgiving nature of the course, although it still has challenging sand and water obstacles."</p>
               <p class="w-75 mb-2"><span class="fst-italic">Ben W.</span></p>
               <p>Ogden, UT</p>
             </div>
           </div>
-          <div class="carousel-item p-4">
+          <div class="carousel-item px-4 px-lg-0 py-3">
             <div class="d-flex align-items-center justify-content-center flex-column">
               <p class="w-75 px-lg-4">"I have enjoyed getting to know the friendly associates working on the desk who are helpful and attentive. The improvements on the course have been great. Being able to get on and play quickly are a big bonus."</p>
               <p class="w-75 mb-2"><span class="fst-italic">Rich N.</span></p>
               <p>Syracuse, UT</p>
             </div>
           </div>
-          <div class="carousel-item p-4">
+          <div class="carousel-item px-4 px-lg-0 py-3">
             <div class="d-flex align-items-center justify-content-center flex-column">
               <p class="w-75 px-lg-4">"I have yet to be disappointed by golfing at Crane Field Golf Course. We golf at least 3 to 6 times a week, and 95% of the time it's at Crane Field. The employees have been very attentive and the course is beginning to really shape up."</p>
               <p class="w-75 mb-2"><span class="fst-italic">Theo C.</span></p>
@@ -216,11 +216,11 @@
           </div>
         </div>
         <button class="carousel-control-prev shadow-none" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span aria-hidden="true"><i class="bi bi-caret-left-fill fs-2"></i></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span aria-hidden="true"><i class="bi bi-caret-right-fill fs-2"></i></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
@@ -238,7 +238,7 @@
           <p class="pt-4 mx-1">Official Pro Shop of Crane Field and Remuda Golf Courses </p>
           
           <div class="mb-4 mb-lg-0 pt-4">
-            <h4 class="py-2">Socials</h4>
+            <h3 class="py-2 fs-3">Socials</h3>
             <div class="d-flex gap-4 justify-content-center">
               <a href="https://www.facebook.com/remudagolf" target="_blank">
                 <i class="bi bi-facebook"></i>
@@ -257,7 +257,7 @@
 
         <div class="col col-12 col-lg-4 align-items-center text-start mb-4 mb-lg-0 ">
           <div class="d-flex flex-column justify-content-center align-items-center text-start">
-            <h4 class="py-2">Quick Links</h4>
+            <h3 class="py-2 fs-3">Quick Links</h3>
             <ul>
               <li>
                 <a href="events.html#weddings">Weddings</a>
@@ -290,10 +290,12 @@
         <hr class="mx-auto mb-4 d-lg-none"> 
 
         <div class="col col-12 col-lg-4 align-items-center text-center mb-3 mb-lg-0 justify-content-center">
-                    <h4 class="py-2">Golfer Freebies</h4>
-                    <p>Don't miss out on the action! Subscribe by email or text to receive freebies including monthly golf news, and giveaway contests.</p>
-                    <a id="newsletterButton" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
-                </div>
+            <h3 class="py-2 fs-3">Golfer Freebies</h3>
+            <p>Don't miss out on the action! Subscribe by email or text to receive freebies including monthly golf news, and giveaway contests.</p>
+            <div class="mt-4 pt-2">
+              <a id="newsletterButton" class="mt-4" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
+            </div>
+          </div>
       </div>
       <hr class="mt-4">
       <div id="copyrightContainer" class="mx-0 p-4">

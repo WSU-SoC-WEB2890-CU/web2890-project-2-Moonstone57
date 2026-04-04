@@ -9,23 +9,22 @@
 </head>
 
 <body>
-    
     <header class="container-fluid d-none d-lg-flex">
         <div class="d-flex w-100 justify-content-between align-items-center p-3 gap-2">
             <a href="index.html" class="d-flex w-25">
                 <img class="img-fluid" src="images/logos.png" alt="logos">
             </a>
             <form class="d-flex flex-grow-1 mx-4" role="search">
-                <div class="input-group p-1 w-100">
+                <div class="input-group p-1 w-75">
                 <span class="input-group-text bg-transparent border-0 ">
-                    <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search p-0"></i></button>
+                    <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search px-1"></i></button>
                 </span>
                 <input id="searchBar" class="form-control me-2 p-0 border-0 bg-transparent" type="search" placeholder="Search..." aria-label="Search"/>
                 </div>
             </form>
-            <a class="d-flex align-items-center justify-content-end" href="cart.html">
-                <i class="bi bi-cart3 fs-2 text-black"></i>
-            </a>  
+            <div class="d-flex align-items-center justify-content-end me-3">
+                <a href="cart.html" id="shoppingCartLink" class="w-100"><i id="shoppingCartIcon" class="bi bi-cart3 fs-2 text-black py-2"></i></a>  
+            </div>
         </div>
     </header>
 
@@ -42,7 +41,7 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-lg-auto d-flex">
-                    <li class="nav-item">
+                    <li class="nav-item d-lg-none">
                         <form class="d-flex col my-2 d-lg-none" role="search">
                         <div class="input-group p-1 m-0">
                             <span class="input-group-text bg-transparent border-0 ">
@@ -85,7 +84,7 @@
             <h3>Pricing</h3>
             <p>All packages require a Non-Refundable Booking Fee of $100 in addition to package price and sales taxes. Also, a Clubhouse Policy Agreement must be signed to complete your reservation. Full payment is required at least 90 days in advance. All sales are final. Cancellations will be reimbursed in golf shop credits only.</p>
 
-            <div id="weddingCards" class="d-flex gap-4">
+            <div id="weddingCards" class="d-flex flex-column flex-md-row gap-4">
                 <div class="card mb-4 me-auto w-100">
                     <h4 class="text-white p-4 card-header text-center">Wedding Packages<br>Pricing and Benefits</h4>
                     <div class="card-body">
@@ -136,101 +135,12 @@
             </div>
         </section>
 
-        <section id="booking" class="py-4 mt-4">
-            <div class="container">
-                <h2 class="text-center">Event Booking</h2>
-                <form class="mb-4">
-                    <div class="mb-3">
-                        <label for="firstName" class="form-label"><span class="text-tertiary">*</span>First Name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="E.g. John" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="lastName" class="form-label"><span class="text-tertiary">*</span>Last Name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="E.g. Doe" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="phoneNumber" class="form-label"><span class="text-tertiary">*</span>Phone Number</label>
-                        <input type="tel" class="form-control" id="phoneNumber" placeholder="E.g. 123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <label for="packageSelect" class="form-label"><span class="text-tertiary">*</span>Choose your Wedding Package: </label>
-                        <select id="packageSelect" class="form-select" required>
-                            <option>-</option>
-                            <option value="gold">Gold Package Including Booking Fee</option>
-                            <option value="silver">Silver Package Including Booking Fee</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3 ps-0">
-                        <fieldset class="pe-0">
-                            <legend class="pe-0">Add-ons (Optional)</legend>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="addOn1">
-                                <label class="form-check-label" for="addOn1">Extra 6 Hour Block (8 AM - 2 PM)</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="addOn2">
-                                <label class="form-check-label" for="addOn2">Fountain Drink Machine Rental</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="addOn3">
-                                <label class="form-check-label" for="addOn3">Disposable Table Covers, Cups, and Flatware</label>
-                            </div>
-                        </fieldset>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="eventDate" class="form-label"><span class="text-tertiary">*</span>Event Date</label>
-                        <input type="date" class="form-control" id="eventDate" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="eventName" class="form-label"><span class="text-tertiary">*</span>Event Name</label>
-                        <input type="text" class="form-control" id="eventName" placeholder="E.g. John and Jane's Wedding" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="eventType" class="form-label"><span class="text-tertiary">*</span>Event Type</label>
-                        <input type="text" class="form-control" id="eventType" placeholder="E.g. Wedding Ceremony, Reception, etc." required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="street" class="form-label"><span class="text-tertiary">*</span>Street Address</label>
-                        <input type="text" class="form-control" id="street" placeholder="E.g. 123 Main St" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="apartment" class="form-label">Street Address Line 2 (optional)</label>
-                        <input type="text" class="form-control" id="apartment" placeholder="E.g. Apt 1A">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="city" class="form-label"><span class="text-tertiary">*</span>City</label>
-                        <input type="text" class="form-control" id="city" placeholder="E.g. Clinton" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="state" class="form-label"><span class="text-tertiary">*</span>State</label>
-                        <input type="text" class="form-control" id="state" placeholder="E.g. Utah" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="zip" class="form-label"><span class="text-tertiary">*</span>Zip code</label>
-                        <input type="text" class="form-control" id="zip" placeholder="E.g. 84015" required>
-                    </div>
-                    
-                    <a href="agreement.html#eventAgreementContainer">Read Crane Field's Clubhouse Event Agreement</a>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-                        <label class="form-check-label" for="exampleCheck1"><span class="text-tertiary">*</span>I have Read and Accept Crane Field's Clubhouse Event Agreement</label>
-                    </div>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
-            </div>
-        </section>      
+        <section id="booking" class=" container py-4 mb-4">
+            <h3>Booking</h3>
+            <p>Our great hall at Crane Field is available for hosting wedding ceremonies and large receptions, accommodating up to 200 guests. The clubhouse is available for rent year-round, excluding dates already booked for events such as golf tournaments or other weddings. All events must conclude by 10 PM.</p>
+            <p>You can complete most of the booking process online if you’re ready to make full payment. Alternatively, you can make credit card payments over the phone or in person at the clubhouse. For partial payments, please arrange a payment schedule by phone or in person.</p>
+            <a href="eventForm.html" class="btn">Book Online Now!</a>
+        </section>
     </main>
 
     <footer class="text-center border-top">
@@ -298,7 +208,9 @@
                 <div class="col col-12 col-lg-4 align-items-center text-center mb-3 mb-lg-0 justify-content-center">
                     <h4 class="py-2">Golfer Freebies</h4>
                     <p>Don't miss out on the action! Subscribe by email or text to receive freebies including monthly golf news, and giveaway contests.</p>
-                    <a id="newsletterButton" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
+                    <div class="mt-4 pt-2">
+                        <a id="newsletterButton" class="mt-4" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
+                    </div>
                 </div>
             </div>
             

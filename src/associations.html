@@ -9,23 +9,22 @@
 </head>
 
 <body>
-    
     <header class="container-fluid d-none d-lg-flex">
         <div class="d-flex w-100 justify-content-between align-items-center p-3 gap-2">
-        <a href="index.html" class="d-flex w-25">
-            <img class="img-fluid" src="images/logos.png" alt="logos">
-        </a>
-        <form class="d-flex flex-grow-1 mx-4" role="search">
-            <div class="input-group p-1 w-100">
-            <span class="input-group-text bg-transparent border-0 ">
-                <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search p-0"></i></button>
-            </span>
-            <input id="searchBar" class="form-control me-2 p-0 border-0 bg-transparent" type="search" placeholder="Search..." aria-label="Search"/>
+            <a href="index.html" class="d-flex w-25">
+                <img class="img-fluid" src="images/logos.png" alt="logos">
+            </a>
+            <form class="d-flex flex-grow-1 mx-4" role="search">
+                <div class="input-group p-1 w-75">
+                <span class="input-group-text bg-transparent border-0 ">
+                    <button class="btn p-0 shadow-none" type="submit"><i class="bi bi-search px-1"></i></button>
+                </span>
+                <input id="searchBar" class="form-control me-2 p-0 border-0 bg-transparent" type="search" placeholder="Search..." aria-label="Search"/>
+                </div>
+            </form>
+            <div class="d-flex align-items-center justify-content-end me-3">
+                <a href="cart.html" id="shoppingCartLink" class="w-100"><i id="shoppingCartIcon" class="bi bi-cart3 fs-2 text-black py-2"></i></a>  
             </div>
-        </form>
-        <a class="d-flex align-items-center justify-content-end" href="cart.html">
-            <i class="bi bi-cart3 fs-2 text-black"></i>
-        </a>  
         </div>
     </header>
 
@@ -42,7 +41,7 @@
             </a>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-lg-auto d-flex">
-                    <li class="nav-item">
+                    <li class="nav-item d-lg-none">
                         <form class="d-flex col my-2 d-lg-none" role="search">
                         <div class="input-group p-1 m-0">
                             <span class="input-group-text bg-transparent border-0 ">
@@ -81,36 +80,61 @@
         <section id="associationPrices" class="text-center container-fluid mb-4">
             <h2>2026 Game Fees & Membership Dues</h2>
             
-            <div class="card w-75 mx-auto mb-4">
-                <h3 class="p-4 text-white card-header">Crane Field</h3>
-                <div class="card-body">
-                    <h4 class="mb-3">Men | Senior Men | Women</h4>
-                    <p><span class="text-tertiary fw-bold">$50</span> Annual Membership Dues</p>
-                    <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
-                    <hr class="w-75 mx-auto">
-                    <button class="text-black">Join an Association Now!</button>
+            <article class="row align-items-stretch justify-content-center mx-5 h-100">
+                <div class="col-12 col-md-4 mb-4 mb-lg-0">
+                    <div class="card h-100 mb-4 px-0">
+                        <h3 class="p-4 text-white card-header d-flex align-items-center justify-content-center">Men & Senior Men</h3>
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="mb-3">Crane Field</h4>
+                            <p><span class="text-tertiary fw-bold">$50</span> Annual Membership Dues</p>
+                            <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
+                            <hr class="w-100 mx-auto">
+                            <h4 class="mb-3">Remuda</h4>
+                            <p><span class="text-tertiary fw-bold">$75</span> Annual Membership Dues</p>
+                            <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
+                            <p><span class="text-tertiary fw-bold">$10</span> Side Game Optional</p>
+                            <hr class="w-100 mx-auto mb-0">
+                            <div class="mt-auto">
+                                <button class="text-black">Join an Association Now!</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                
+                <div class="col-12 col-md-4 mb-4 mb-lg-0">
+                    <div class="card h-100 mb-4 px-0">
+                        <h3 class="p-4 text-white card-header d-flex align-items-center justify-content-center">Women</h3>
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="mb-3">Remuda</h4>
+                            <p><span class="text-tertiary fw-bold">$40</span> Annual Membership Dues</p>
+                            <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
+                            <hr class="w-100 mx-auto">
+                            <h4 class="mb-3">Crane Field</h4>
+                            <p><span class="text-tertiary fw-bold">$50</span> Annual Membership Dues</p>
+                            <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
+                            <hr class="w-100 mx-auto mb-0">
+                            <div class="mt-auto">
+                                <button class="text-black">Join an Association Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="card w-75 mx-auto mb-4">
-                <h3 class="p-4 text-white card-header">Remuda</h3>
-                <div class="card-body">
-                    <h4>Men | Senior Men</h4>
-                    <p><span class="text-tertiary fw-bold">$75</span> Annual Membership Dues</p>
-                    <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
-                    <p><span class="text-tertiary fw-bold">$10</span> Side Game Optional</p>
-                    <hr class="w-75 mx-auto">
-                    <h4>Women</h4>
-                    <p><span class="text-tertiary fw-bold">$40</span> Annual Membership Dues</p>
-                    <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
-                    <hr class="w-75 mx-auto">
-                    <h4>Co-Ed Couples</h4>
-                    <p>Remuda Men's and Women's Membership (See above.)</p>
-                    <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
-                    <hr class="w-75 mx-auto">
-                    <button class="text-black">Join an Association Now!</button>
+                <div class=" col-12 col-md-4 mb-4 mb-lg-0">
+                    <div class="card h-100 mb-4 px-0">
+                        <h3 class="p-4 text-white card-header d-flex align-items-center justify-content-center">Co-Ed Couples</h3>
+                        <div class="card-body d-flex flex-column">
+                            <h4>Remuda</h4>
+                            <p>Remuda Men's and Women's Membership (See above.)</p>
+                            <p><span class="text-tertiary fw-bold">$10</span> Weekly Game Fees (100% Payouts)</p>
+                            <hr class="w-100 mx-auto mb-0">
+                            <div class="mt-auto">
+                                <button class="text-black">Join an Association Now!</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </article>
         </section>
 
         <section id="benefitsSection" class="py-5">
@@ -131,7 +155,6 @@
                     <button id="associationHeroButton" class="w-50 mx-auto">Join an Association Now!</button>
                 </div>
             </article>
-            
         </section>
 
         <section id="associationScheduleContainer" class="container mb-4 py-4 text-white text-center">
@@ -537,7 +560,9 @@
                 <div class="col col-12 col-lg-4 align-items-center text-center mb-3 mb-lg-0 justify-content-center">
                     <h4 class="py-2">Golfer Freebies</h4>
                     <p>Don't miss out on the action! Subscribe by email or text to receive freebies including monthly golf news, and giveaway contests.</p>
-                    <a id="newsletterButton" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
+                    <div class="mt-4 pt-2">
+                        <a id="newsletterButton" class="mt-4" href="https://docs.google.com/forms/d/e/1FAIpQLSe7uBCrboZRKTjz04IUfQPBsqL2jabb99tqvSD7gWqDkbeiBg/viewform" target="_blank">Subscribe to the newsletter</a>
+                    </div>
                 </div>
             </div>
             

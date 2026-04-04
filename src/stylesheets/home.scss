@@ -3,6 +3,7 @@
 #heroImgContainer{
     background-color: $secondary;
     color: white;
+    height: 100%;
 }
 
 #countdownContainer{
@@ -23,26 +24,78 @@
     }
 }
 
-#carousel{
-    min-height: 45vh;
-    background-color: $secondary;
+#testimonials{
+    @include media-breakpoint-up(lg){
+        width: 70%;
+    }
+    
+    #carousel{
+        height: 22rem;
+        border-radius: 20px !important;
 
-    button{
-        background-color: white !important;
-        box-shadow: none;
-        border: 2px solid transparent;
-        border-radius: 0 !important;
-        opacity: 1;
+        .carousel-inner{
+            background-color: $secondary;
+            height: 100%;
+            border-radius: 20px !important;
+        }
 
-        &:hover{
-            border-color: $secondary;
+        .carousel-indicators button{
+            text-indent: 0;
+            color: white;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        button{
+            box-shadow: none;
+            background-color: white !important;
+            opacity: 1;
+            transition: all 0.3s ease-in;
+
+            &.carousel-control-prev, &.carousel-control-next{
+                border: .25rem solid $secondary;
+                height: 100%;
+                width: 12%;
+                border-radius: 20px;
+
+                i{
+                    color: $secondary;
+                }
+
+                &:focus-visible{
+                    box-shadow: 0.25rem 0.25rem 0.25rem rgba($tertiary, .5);
+                    outline: 2px solid $tertiary;
+                    transition: none;
+                }
+            }
+
+            &:hover, &.active:hover{
+                background-color: $sky !important;
+            }
+
+            &.active{
+                background-color: $primary !important;
+            }
+        }
+
+        @include media-breakpoint-up(sm){
+            height: 19rem;
+        }
+
+        @include media-breakpoint-up(md){
+            height: 16rem;
+        }
+
+        @include media-breakpoint-up(xl){
+            height: 14rem;
         }
     }
 }
 
-
-button{
+button, a.btn{
     @include button-style;
+    background-color: $primary;
 }
 
 .card{

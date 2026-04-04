@@ -10,18 +10,23 @@
         font-size: $h3-font-size;
         margin: 0;
     }
-}
 
-#lessonSignUp{
-    background-color: $secondary;
-    color: white;
-    
-    button{
+    .card-header{
+        background-color: $secondary;
+        color: black;
+        border: none;
+        color: white;
+    }
+
+    .btn{
         @include button-style;
     }
 
-    a{
-        color: $sky;
+    img{
+        border-bottom: 2px solid $secondary;
+        background-color: $sky;
     }
 }
+
+
 

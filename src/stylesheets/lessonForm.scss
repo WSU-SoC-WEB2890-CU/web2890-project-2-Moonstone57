@@ -1,0 +1,53 @@
+@use '_custom' as *;
+
+#lessonSignUp{
+    button{
+        @include button-style;
+    }
+
+    a{
+        color: $tertiary;
+        transition: all 0.3s ease-in;
+
+        &:hover{
+            color: $primary;
+        }
+
+        &:focus-visible{
+            transition: none;
+        }
+    }
+
+    form{
+        input, select{
+            border: 1.5px solid rgba($secondary, 0.5);
+            transition: all 0.3s ease-out;
+
+            &:hover{
+                border-color: $secondary;
+            }
+
+            &:focus{
+                transition: none;
+                outline: 2px solid $tertiary;
+                box-shadow: 0 0 0 0.25rem rgba($tertiary, 0.25);
+            }
+        }
+        
+        @include media-breakpoint-up(lg){
+            margin-left: 7rem;
+        }
+    }
+
+    .nameInput{
+        width: 7.75rem;
+    }
+
+    .phoneInput{
+        width: 9.75rem;
+    }
+
+    .dropdownInput{
+        width: 20rem;
+    }
+}

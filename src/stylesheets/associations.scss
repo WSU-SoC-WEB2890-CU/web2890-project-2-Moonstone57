@@ -10,6 +10,16 @@
         button{
             @include button-style;
         }
+
+        .card-header{
+            @include media-breakpoint-up(md){
+                min-height: 8.5rem;
+            }
+            
+            @include media-breakpoint-up(lg){
+                min-height: 8.5rem;
+            }
+        }
     }
 
     #benefitsSection{
@@ -23,6 +33,10 @@
         #associationHeroButton{
             @include button-style;
             color: black;
+            
+            &:hover{
+                border-color: white;
+            }
         }
 
         img{
@@ -38,8 +52,13 @@
     #associationScheduleContainer{
         #associationScheduleTitle, p{
             color: $secondary;
+
             a{
                 color: $tertiary;
+                transition: all 0.3s ease-out;
+                &:hover{
+                    color: $primary;
+                }
             }
         }
 
@@ -71,6 +90,7 @@
                     border: 2px solid transparent;
                     display: flex;
                     justify-content: space-between;
+                    transition: all 0.3s ease-in;
 
                     &:hover{
                         background-color: $tertiary !important;
@@ -83,7 +103,7 @@
                         background-color: $tertiary;
                         color: white !important;
                         &:hover{
-                            background-color: $secondary !important;
+                            background-color: $tertiary !important;
                             color: white !important;
                         }
 

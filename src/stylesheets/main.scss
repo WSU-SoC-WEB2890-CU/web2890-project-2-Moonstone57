@@ -7,7 +7,8 @@
 @use 'tournaments';
 @use 'agreement';
 @use 'cart';
-
+@use 'eventForm';
+@use 'lessonForm';
 @use 'footer';
 
 @import "bootstrap/scss/bootstrap.scss";

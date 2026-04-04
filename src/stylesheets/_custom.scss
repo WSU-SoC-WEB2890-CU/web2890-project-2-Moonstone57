@@ -84,10 +84,17 @@ $headings-font-family: "Poppins", sans-serif;
     padding: .5rem 1rem;
     font-weight: 600;
     box-shadow: 0.25rem 0.25rem 0.25rem rgba(black, .25);
+    transition: all 0.3s ease-in;
+
     &:hover{
         background-color: $sky;
         border-color: $secondary;
         color: black;
+    }
+    &:focus-visible{
+        box-shadow: 0.25rem 0.25rem 0.25rem rgba($tertiary, .5);
+        outline: 2px solid $tertiary;
+        transition: none;
     }
 }
 
@@ -104,6 +111,7 @@ $headings-font-family: "Poppins", sans-serif;
 
     button{
         margin-top: 15px;
+        transition: all 0.3s ease-in;
     }
 
     .card-header{
@@ -111,12 +119,17 @@ $headings-font-family: "Poppins", sans-serif;
     }
 }
 
+button, .btn{
+    transition: all 0.3s ease-in;
+}
+
 .text-tertiary{
     color: $tertiary;
 }
 
 :focus-visible{
-    border-color: $tertiary;
+    border-color: transparent;
+    outline: 2px solid $tertiary;
     box-shadow: 0 0 0 .25rem rgba($tertiary, .25);
 }
 
@@ -124,8 +137,12 @@ $headings-font-family: "Poppins", sans-serif;
     border: 2px solid $secondary;
     border-radius: 15px;
     
-    input:focus-within{
+    &:focus-within{
         box-shadow: 0 0 0 .25rem rgba($tertiary, .25);
+    }
+
+    input:focus-within{
+        box-shadow: none;
     }
 }
 

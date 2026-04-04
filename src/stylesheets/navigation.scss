@@ -3,26 +3,33 @@
 .navbar{
     color: black;
 
+    .nav-link{
+        color: black !important;
+        opacity: 1 !important;
+    }
+
     ul{
         gap: 15px;
         font-weight: 600;
 
         li{
             font-size: $h4-font-size;
+            transition: all 0.3s ease-in;
+            padding: .2rem;
+            border: 2px solid transparent !important;
+            border-radius: 15px;
+            
             &:hover{
                 border: 2px solid $secondary !important;
-                border-radius: 15px;
                 background-color: $light;
-                margin: -7px;
-                padding: 5px;
                 color: black !important;
             }
         }
     }
 
     a{
-    color: black;
-    font-weight: 600;        
+        color: black;
+        font-weight: 600;        
 
         &.active{
             font-weight: 700;
@@ -42,28 +49,61 @@
 
 header{
     min-height: 15vh;
+
     a{
         width: 40%;
-        i{
-            border: 2px solid transparent;
+
+        button{
+            outline: 2px solid transparent;
             padding: .25rem .75rem;
-            border-radius: 100px;
 
             &:hover{
-                border-color: $primary;
-
+                outline-color: $primary;
+                outline-offset: 1.25rem;
             }
         }
 
         img{
             outline: 1px solid transparent;
             border-radius: 12px;
+            transition: all 0.3s ease-in;
+
             &:hover{
                 outline-color: $primary;
                 outline-offset: 4px;
             }
         }
-        
+    }
+}
+
+#shoppingCartLink{
+    border: 2px solid transparent;
+    padding: .25rem .75rem;
+    transition: all 0.3s ease-in;
+    border-radius: 100%;
+
+    &:hover{
+        border-color: $primary;
+    }
+
+    &:focus{
+        outline: none;  
+        box-shadow: none;
+
+        &:focus-visible{
+            box-shadow: 0 0 0 0.25rem rgba($tertiary, 0.25);
+            outline: 2px solid black;
+            border-radius: 15px;
+        }    
+    }
+}
+
+.input-group-text button{
+    transition: all 0.3s ease-in;
+    
+    &:hover{
+        background-color: white;
+        border-color: $primary;
     }
 }
 

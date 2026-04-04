@@ -4,7 +4,7 @@ let intervalID;
 const deadlineMessage = "The Early Bird Sale has ended"
 
 //Sets the deadline date
-const deadline = new Date(2026, 2, 31, 17);
+const deadline = new Date(2026, 4, 31, 17);
 
 let daysCounter = document.getElementById('daysCounter');
 let hoursCounter = document.getElementById('hoursCounter');
