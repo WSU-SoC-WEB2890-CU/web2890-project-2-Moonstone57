@@ -1,3 +1,20 @@
-/* Your styles go here */
+@use 'navigation';
+@use 'home';
+@use 'associations';
+@use 'events';
+@use 'gifts';
+@use 'lessons';
+@use 'tournaments';
+@use 'agreement';
+@use 'cart';
+@use 'eventForm';
+@use 'lessonForm';
+@use 'footer';
+
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+
+
+
+

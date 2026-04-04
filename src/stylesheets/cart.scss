@@ -1,0 +1,15 @@
+@use '_custom' as *;
+
+#cartTitle{
+    background-color: $secondary;
+    color: white;
+}
+
+#shoppingCartContainer{
+    min-height: 35vh;
+    
+    #continueShoppingButton{
+        @include button-style;
+        text-decoration: none;
+    }
+}

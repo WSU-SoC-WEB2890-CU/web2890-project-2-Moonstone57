@@ -1,0 +1,113 @@
+@use '_custom' as *;
+
+#heroImgContainer{
+    background-color: $secondary;
+    color: white;
+    height: 100%;
+}
+
+#countdownContainer{
+    background-color: $tertiary;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: transparent 5px solid;
+    color: white;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgba(black, .25);
+    
+    @include media-breakpoint-up(md){
+        max-width: 75%;
+    }
+
+    @include media-breakpoint-up(lg){
+        max-width: 50%;
+    }
+}
+
+#testimonials{
+    @include media-breakpoint-up(lg){
+        width: 70%;
+    }
+    
+    #carousel{
+        height: 22rem;
+        border-radius: 20px !important;
+
+        .carousel-inner{
+            background-color: $secondary;
+            height: 100%;
+            border-radius: 20px !important;
+        }
+
+        .carousel-indicators button{
+            text-indent: 0;
+            color: white;
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+
+        button{
+            box-shadow: none;
+            background-color: white !important;
+            opacity: 1;
+            transition: all 0.3s ease-in;
+
+            &.carousel-control-prev, &.carousel-control-next{
+                border: .25rem solid $secondary;
+                height: 100%;
+                width: 12%;
+                border-radius: 20px;
+
+                i{
+                    color: $secondary;
+                }
+
+                &:focus-visible{
+                    box-shadow: 0.25rem 0.25rem 0.25rem rgba($tertiary, .5);
+                    outline: 2px solid $tertiary;
+                    transition: none;
+                }
+            }
+
+            &:hover, &.active:hover{
+                background-color: $sky !important;
+            }
+
+            &.active{
+                background-color: $primary !important;
+            }
+        }
+
+        @include media-breakpoint-up(sm){
+            height: 19rem;
+        }
+
+        @include media-breakpoint-up(md){
+            height: 16rem;
+        }
+
+        @include media-breakpoint-up(xl){
+            height: 14rem;
+        }
+    }
+}
+
+button, a.btn{
+    @include button-style;
+    background-color: $primary;
+}
+
+.card{
+    @include card-style;
+
+    .pass-current-price{
+        font-size: $h3-font-size;
+    }
+}
+
+footer{
+    .horseshoe-logo{
+        height: 3em;
+    }
+}

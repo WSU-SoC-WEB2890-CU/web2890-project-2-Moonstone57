@@ -1,0 +1,32 @@
+@use '_custom' as *;
+
+#lessonsTitle{
+    background-color: $secondary;
+    color: white;
+}
+
+#lessonsCards{
+    h2{
+        font-size: $h3-font-size;
+        margin: 0;
+    }
+
+    .card-header{
+        background-color: $secondary;
+        color: black;
+        border: none;
+        color: white;
+    }
+
+    .btn{
+        @include button-style;
+    }
+
+    img{
+        border-bottom: 2px solid $secondary;
+        background-color: $sky;
+    }
+}
+
+
+

@@ -1,0 +1,26 @@
+@use '_custom' as *;
+
+#giftsTitle{
+    background-color: $secondary !important;
+    color: white;
+}
+
+#gifts{
+    .card{
+        border-color: transparent !important;
+
+        .gift-name{
+            font-size: $h3-font-size;
+            font-weight: 500;
+        }
+
+        .gift-price{
+            font-size: $h3-font-size;
+            font-weight: 700;
+        }
+        a{
+            @include button-style;
+            text-decoration: none;
+        }
+    }
+}

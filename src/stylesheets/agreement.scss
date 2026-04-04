@@ -1,0 +1,23 @@
+@use '_custom' as *;
+
+#agreementsContainer{
+    #agreementTitle{
+        background-color: $secondary;
+        color: white;
+        
+        h1{
+            font-size: $h3-font-size;
+        }
+    }
+
+    li{
+        margin-bottom: 10px;
+    }
+
+    h2{
+        text-align: center;
+    }
+}
+
+
+

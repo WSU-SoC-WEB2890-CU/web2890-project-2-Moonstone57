@@ -1,0 +1,51 @@
+@use '_custom' as *;
+
+footer{
+    background-color: $secondary;
+    color: white;
+
+    #newsletterButton{
+        @include button-style;
+        text-decoration: none;
+        &:hover{
+            border-color: white;
+        }
+    }
+
+    hr{
+        border-top: 2px solid $gray-500 !important;
+        opacity: 1 !important;
+    }
+    
+    a{
+        color: $primary;
+        transition: all 0.3s ease-in;
+
+        &:hover{
+            color: $sky;
+        }
+
+        &:focus-visible{
+            transition: none;
+        }
+
+        i{
+            padding: 0 .2rem;
+            transition: all 0.3s ease-in;
+            outline: 2px solid transparent;
+            border-radius: 100%;
+            box-shadow: 0.25rem 0.25rem 0.25rem rgba(black, .25);
+
+            &:hover{
+                outline-color: $sky;
+                border-radius: 100%;
+                outline-offset: 5px;
+            }
+
+            &:focus-within{
+                transition: none;
+            }
+        }
+    }
+}
+

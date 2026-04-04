@@ -1,0 +1,112 @@
+@use '_custom' as *;
+
+.navbar{
+    color: black;
+
+    .nav-link{
+        color: black !important;
+        opacity: 1 !important;
+    }
+
+    ul{
+        gap: 15px;
+        font-weight: 600;
+
+        li{
+            font-size: $h4-font-size;
+            transition: all 0.3s ease-in;
+            padding: .2rem;
+            border: 2px solid transparent !important;
+            border-radius: 15px;
+            
+            &:hover{
+                border: 2px solid $secondary !important;
+                background-color: $light;
+                color: black !important;
+            }
+        }
+    }
+
+    a{
+        color: black;
+        font-weight: 600;        
+
+        &.active{
+            font-weight: 700;
+            text-decoration-line: underline;
+            text-underline-offset: 5px;
+        }
+
+        img{
+            height: 30%;
+        }
+    }
+
+    @include media-breakpoint-up(lg){
+        background-color: $primary;
+    }
+}
+
+header{
+    min-height: 15vh;
+
+    a{
+        width: 40%;
+
+        button{
+            outline: 2px solid transparent;
+            padding: .25rem .75rem;
+
+            &:hover{
+                outline-color: $primary;
+                outline-offset: 1.25rem;
+            }
+        }
+
+        img{
+            outline: 1px solid transparent;
+            border-radius: 12px;
+            transition: all 0.3s ease-in;
+
+            &:hover{
+                outline-color: $primary;
+                outline-offset: 4px;
+            }
+        }
+    }
+}
+
+#shoppingCartLink{
+    border: 2px solid transparent;
+    padding: .25rem .75rem;
+    transition: all 0.3s ease-in;
+    border-radius: 100%;
+
+    &:hover{
+        border-color: $primary;
+    }
+
+    &:focus{
+        outline: none;  
+        box-shadow: none;
+
+        &:focus-visible{
+            box-shadow: 0 0 0 0.25rem rgba($tertiary, 0.25);
+            outline: 2px solid black;
+            border-radius: 15px;
+        }    
+    }
+}
+
+.input-group-text button{
+    transition: all 0.3s ease-in;
+    
+    &:hover{
+        background-color: white;
+        border-color: $primary;
+    }
+}
+
+#searchBar{
+    padding: 0;
+}
